@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMS – European Mining Summit | Helsinki 2026</title>
+  <meta name="description" content="European Mining Summit – Where Bitcoin mining meets sustainable energy. September 23, 2026, Helsinki, Finland." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- Tito ticketing: inline mode (no iframe), without default widget CSS -->
+  <script src='https://js.tito.io/v2/with/inline/without/widget-css' async></script>
+  <script>
+    window.tito = window.tito || function() {
+      (tito.q = tito.q || []).push(arguments);
+    };
+    tito("config.set", {
+      allowedEvents: ["ems/2026"]
+    });
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">
+        <img src="/ems-logo.svg" alt="EMS" class="nav__logo-img" />
+      </a>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#tickets" class="btn btn--sm btn--accent">Get Your Tickets</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__grid"></div>
+      <div class="hero__glow hero__glow--1"></div>
+      <div class="hero__glow hero__glow--2"></div>
+    </div>
+    <div class="container hero__content">
+      <img src="/ems-logo.svg" alt="EMS – European Mining Summit" class="hero__logo" />
+      <p class="hero__tag">23 September 2026 · Helsinki, Finland</p>
+      <h1 class="hero__title">European<br/>Mining Summit</h1>
+      <p class="hero__subtitle">Where Bitcoin mining meets sustainable energy.<br/>One day. One stage. The future of green hashpower.</p>
+
+      <!-- Countdown Timer -->
+      <div class="countdown" id="countdown">
+        <div class="countdown__block">
+          <span class="countdown__value" id="cd-days">000</span>
+          <span class="countdown__label">Days</span>
+        </div>
+        <div class="countdown__sep">:</div>
+        <div class="countdown__block">
+          <span class="countdown__value" id="cd-hours">00</span>
+          <span class="countdown__label">Hours</span>
+        </div>
+        <div class="countdown__sep">:</div>
+        <div class="countdown__block">
+          <span class="countdown__value" id="cd-mins">00</span>
+          <span class="countdown__label">Min</span>
+        </div>
+        <div class="countdown__sep">:</div>
+        <div class="countdown__block">
+          <span class="countdown__value" id="cd-secs">00</span>
+          <span class="countdown__label">Sec</span>
+        </div>
+      </div>
+
+      <div class="hero__actions">
+        <a href="#tickets" class="btn btn--accent btn--lg">Get Your Tickets</a>
+        <a href="#about" class="btn btn--outline btn--lg">Learn More</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-value">500+</span>
+          <span class="hero__stat-label">Attendees</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-value">20+</span>
+          <span class="hero__stat-label">Speakers</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-value">1</span>
+          <span class="hero__stat-label">Day</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-value">∞</span>
+          <span class="hero__stat-label">Connections</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">About the Event</span>
+        <h2 class="section__title">Mining Meets Energy</h2>
+        <p class="section__desc">EMS brings together the leading minds in Bitcoin mining and the Nordic energy sector for a focused, high-signal day of talks, panels and networking in Helsinki.</p>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <div class="feature__icon">⚡</div>
+          <h3 class="feature__title">Sustainable Hashpower</h3>
+          <p class="feature__desc">Explore how Nordic renewable energy is powering the next generation of Bitcoin mining infrastructure.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🌲</div>
+          <h3 class="feature__title">Nordic Advantage</h3>
+          <p class="feature__desc">Cold climate, cheap hydro and wind energy, and stable regulation make the Nordics a global mining hub.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">🔗</div>
+          <h3 class="feature__title">Industry Network</h3>
+          <p class="feature__desc">Connect with miners, energy producers, investors and policymakers shaping the future of the industry.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">📊</div>
+          <h3 class="feature__title">Data-Driven Insights</h3>
+          <p class="feature__desc">Real numbers, real case studies. No hype — only actionable intelligence from operators on the ground.</p>
+        </div>
+      </div>
+      <div class="event-details">
+        <div class="event-details__card">
+          <div class="event-details__row">
+            <span class="event-details__label">Date</span>
+            <span class="event-details__value">Wednesday, 23 September 2026</span>
+          </div>
+          <div class="event-details__row">
+            <span class="event-details__label">Location</span>
+            <span class="event-details__value">Helsinki, Finland</span>
+          </div>
+          <div class="event-details__row">
+            <span class="event-details__label">Format</span>
+            <span class="event-details__value">Single-track conference + networking</span>
+          </div>
+          <div class="event-details__row">
+            <span class="event-details__label">Audience</span>
+            <span class="event-details__value">Miners, energy companies, investors, regulators</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Speakers -->
+  <section class="section section--dark" id="speakers">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Speakers</span>
+        <h2 class="section__title">Industry Leaders</h2>
+        <p class="section__desc">Hear from executives, engineers and researchers at the cutting edge of sustainable Bitcoin mining and energy innovation.</p>
+      </div>
+      <div class="speakers-grid">
+        <div class="speaker">
+          <div class="speaker__avatar">
+            <span>RG</span>
+          </div>
+          <h3 class="speaker__name">Rachel Geyer</h3>
+          <p class="speaker__role">Chairman, European Bitcoin Energy Association</p>
+        </div>
+        <div class="speaker">
+          <div class="speaker__avatar">
+            <span>RS</span>
+          </div>
+          <h3 class="speaker__name">Robert Schulman</h3>
+          <p class="speaker__role">Chairman, Minersloop</p>
+        </div>
+        <div class="speaker">
+          <div class="speaker__avatar">
+            <span>JK</span>
+          </div>
+          <h3 class="speaker__name">Jaakko Kaijala</h3>
+          <p class="speaker__role">Co-founder, Nordblock</p>
+        </div>
+        <div class="speaker">
+          <div class="speaker__avatar">
+            <span>KK</span>
+          </div>
+          <h3 class="speaker__name">Kasimir Kaitue</h3>
+          <p class="speaker__role">Co-founder, Nordblock</p>
+        </div>
+        <div class="speaker">
+          <div class="speaker__avatar">
+            <span>MP</span>
+          </div>
+          <h3 class="speaker__name">Martin Paasi</h3>
+          <p class="speaker__role">Member of the Finnish Parliament</p>
+        </div>
+        <div class="speaker">
+          <div class="speaker__avatar">
+            <span>RK</span>
+          </div>
+          <h3 class="speaker__name">Roni Karjalainen</h3>
+          <p class="speaker__role">CEO, Minersloop</p>
+        </div>
+      </div>
+      <p class="speakers-note">More speakers to be announced. <a href="#tickets">Get your tickets</a> before they sell out.</p>
+    </div>
+  </section>
+
+  <!-- Schedule -->
+  <section class="section" id="schedule">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Schedule</span>
+        <h2 class="section__title">Agenda</h2>
+        <p class="section__desc">The full schedule will be released soon.</p>
+      </div>
+      <div class="schedule">
+        <div class="schedule__item">
+          <div class="schedule__time">08:00</div>
+          <div class="schedule__content">
+            <span class="schedule__type schedule__type--break">Registration</span>
+            <h3 class="schedule__talk">Doors Open & Registration</h3>
+            <p class="schedule__detail">Check-in, coffee and light breakfast. Networking.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tickets -->
+  <section class="section section--dark" id="tickets">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Secure Your Spot</span>
+        <h2 class="section__title">Get Your Tickets</h2>
+        <p class="section__desc">Seats are limited. Secure yours before they sell out.</p>
+      </div>
+      <div class="tito-wrapper" id="tito-wrapper">
+        <tito-widget event="ems/2026"></tito-widget>
+      </div>
+      <div class="tito-completion" id="tito-completion">
+        <span class="form__success-icon">✓</span>
+        <p>You're registered! Check your email for confirmation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsors -->
+  <section class="section" id="sponsors">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Partner With Us</span>
+        <h2 class="section__title">Become a Sponsor</h2>
+        <p class="section__desc">Showcase your brand to 500+ decision-makers in Bitcoin mining and energy. Multiple partnership tiers available.</p>
+      </div>
+      <div class="sponsor-tiers">
+        <div class="sponsor-tier">
+          <div class="sponsor-tier__badge sponsor-tier__badge--platinum">Platinum</div>
+          <p>Main stage branding, keynote slot, premium booth, VIP dinner access</p>
+        </div>
+        <div class="sponsor-tier">
+          <div class="sponsor-tier__badge sponsor-tier__badge--gold">Gold</div>
+          <p>Stage branding, panel slot, standard booth, attendee list access</p>
+        </div>
+        <div class="sponsor-tier">
+          <div class="sponsor-tier__badge sponsor-tier__badge--silver">Silver</div>
+          <p>Logo placement, networking access, digital presence in event materials</p>
+        </div>
+      </div>
+      <form class="form" id="sponsor-form">
+        <div class="form__grid">
+          <div class="form__group">
+            <label class="form__label" for="sp-name">Contact Name</label>
+            <input class="form__input" type="text" id="sp-name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="sp-email">Business Email</label>
+            <input class="form__input" type="email" id="sp-email" name="email" placeholder="name@company.com" required />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="sp-company">Company</label>
+            <input class="form__input" type="text" id="sp-company" name="company" placeholder="Company name" required />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="sp-tier">Interested Tier</label>
+            <select class="form__input" id="sp-tier" name="tier">
+              <option value="">Select tier</option>
+              <option value="platinum">Platinum</option>
+              <option value="gold">Gold</option>
+              <option value="silver">Silver</option>
+              <option value="custom">Custom Partnership</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__group form__group--full">
+          <label class="form__label" for="sp-message">Message (optional)</label>
+          <textarea class="form__input form__textarea" id="sp-message" name="message" placeholder="Tell us about your sponsorship goals..." rows="4"></textarea>
+        </div>
+        <button class="btn btn--accent btn--lg btn--full" type="submit">
+          Send Inquiry
+        </button>
+        <div class="form__success" id="sponsor-success">
+          <span class="form__success-icon">✓</span>
+          <p>Thank you! We'll get back to you within 48 hours.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="/ems-logo.svg" alt="EMS" class="footer__logo-img" />
+      </div>
+      <p class="footer__info">23 September 2026 · Helsinki, Finland</p>
+      <p class="footer__copy">&copy; 2026 European Mining Summit. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
