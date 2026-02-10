@@ -1137,42 +1137,6 @@ tito-widget * {
   box-shadow: 0 8px 32px rgba(0, 200, 83, 0.1);
 }
 
-/* 4th ticket: Test Ticket — transparent bg, black text (temporary) */
-.tito-release:nth-child(4) {
-  background: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  color: #111;
-}
-
-.tito-release:nth-child(4)::after {
-  background: transparent;
-  box-shadow: none;
-}
-
-.tito-release:nth-child(4) .tito-release-title,
-.tito-release:nth-child(4) .tito-release--title {
-  color: #111;
-}
-
-.tito-release:nth-child(4) .tito-release-description,
-.tito-release:nth-child(4) .tito-release-description--description {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.tito-release:nth-child(4) .tito-price {
-  color: #111;
-}
-
-.tito-release:nth-child(4) .tito-release--tax,
-.tito-release:nth-child(4) .tito-release--status {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.tito-release:nth-child(4):hover {
-  border-color: rgba(0, 0, 0, 0.4);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-}
-
 /* --- Tito form / checkout area --- */
 .tito-widget-form,
 .tito-registration {
@@ -1331,6 +1295,26 @@ tito-widget a {
 
 .sponsors-logos__img:hover {
   transform: scale(1.2);
+}
+
+.sponsors-logos__img--main {
+  max-width: 286px;
+  max-height: 130px;
+}
+
+.sponsor-category {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sponsor-category__title {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gray-400);
+  margin-bottom: 24px;
 }
 
 .sponsors__form-title {
