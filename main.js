@@ -94,18 +94,33 @@ function handleForm(formId, successId) {
   if (!form) return;
   const success = document.getElementById(successId);
 
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
+    const btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
 
-    // Collect form data (ready for a future API endpoint)
-    const data = Object.fromEntries(new FormData(form));
-    console.log(`[${formId}] Submission:`, data);
+    try {
+      const res = await fetch('https://formspree.io/f/mreaepwd', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
 
-    // Show success state
-    if (success) success.classList.add('show');
+      if (res.ok) {
+        if (success) success.classList.add('show');
+        form.reset();
+      } else {
+        btn.textContent = 'Error – try again';
+      }
+    } catch {
+      btn.textContent = 'Error – try again';
+    }
 
-    // Reset form
-    form.reset();
+    btn.disabled = false;
+    if (!btn.textContent.startsWith('Error')) {
+      btn.textContent = 'Send Inquiry';
+    }
   });
 }
 

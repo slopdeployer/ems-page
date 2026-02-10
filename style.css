@@ -73,7 +73,11 @@ img { max-width: 100%; display: block; }
   background: rgba(0, 47, 108, 0.95);
   backdrop-filter: blur(12px);
   padding: 10px 0;
-  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+  top: 12px;
+  left: 24px;
+  right: 24px;
+  border-radius: 9999px;
 }
 
 .nav__inner {
@@ -169,6 +173,18 @@ img { max-width: 100%; display: block; }
   background: var(--green-dark);
   transform: translateY(-1px);
   box-shadow: 0 4px 20px rgba(0, 200, 83, 0.35);
+}
+
+.btn--navy {
+  background: var(--navy);
+  color: var(--white);
+  margin-top: 24px;
+}
+
+.btn--navy:hover {
+  background: var(--navy-light);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(0, 47, 108, 0.35);
 }
 
 .btn--outline {
@@ -624,6 +640,16 @@ img { max-width: 100%; display: block; }
 }
 
 /* --- Schedule --- */
+.schedule-coming {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  text-align: center;
+  color: var(--gray-400);
+  font-weight: 400;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
 .schedule {
   max-width: 740px;
   margin: 0 auto;
@@ -899,8 +925,8 @@ tito-widget * {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: var(--navy);
-  box-shadow: 0 -60px 0 0 var(--navy), 0 60px 0 0 var(--navy);
+  background: transparent;
+  box-shadow: 0 -60px 0 0 transparent, 0 60px 0 0 transparent;
 }
 
 /* Ticket title area */
@@ -980,8 +1006,8 @@ tito-widget * {
 }
 
 .tito-release:nth-child(1)::after {
-  background: var(--navy);
-  box-shadow: 0 -60px 0 0 var(--navy), 0 60px 0 0 var(--navy);
+  background: transparent;
+  box-shadow: none;
 }
 
 .tito-release:nth-child(1) .tito-release-title,
@@ -1020,7 +1046,8 @@ tito-widget * {
 }
 
 .tito-release:nth-child(2)::after {
-  background: var(--navy);
+  background: transparent;
+  box-shadow: none;
 }
 
 .tito-release:nth-child(2) .tito-release-title,
@@ -1069,7 +1096,8 @@ tito-widget * {
 }
 
 .tito-release:nth-child(3)::after {
-  background: var(--navy);
+  background: transparent;
+  box-shadow: none;
 }
 
 .tito-release:nth-child(3) .tito-release-title,
@@ -1107,6 +1135,42 @@ tito-widget * {
 .tito-release:nth-child(3):hover {
   border-color: rgba(0, 200, 83, 0.35);
   box-shadow: 0 8px 32px rgba(0, 200, 83, 0.1);
+}
+
+/* 4th ticket: Test Ticket — transparent bg, black text (temporary) */
+.tito-release:nth-child(4) {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #111;
+}
+
+.tito-release:nth-child(4)::after {
+  background: transparent;
+  box-shadow: none;
+}
+
+.tito-release:nth-child(4) .tito-release-title,
+.tito-release:nth-child(4) .tito-release--title {
+  color: #111;
+}
+
+.tito-release:nth-child(4) .tito-release-description,
+.tito-release:nth-child(4) .tito-release-description--description {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.tito-release:nth-child(4) .tito-price {
+  color: #111;
+}
+
+.tito-release:nth-child(4) .tito-release--tax,
+.tito-release:nth-child(4) .tito-release--status {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.tito-release:nth-child(4):hover {
+  border-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 /* --- Tito form / checkout area --- */
